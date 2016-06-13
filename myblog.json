@@ -1,0 +1,9 @@
+{"title": "fragment使用不当 导致java.lang.IllegalStateException", "desc": "摘要: 错误信息：java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first. 信息补充： 使用Fragme..."}
+{"title": "怎样从GitHub项目中，下载单个文件夹或文件", "desc": "摘要: 首先去下载一个SVN的命令行，这里是连接。打开cmd，键入svn help，如果有内容，说明安装成功。在github上定位到所需下载的文件夹，例如： https://github.com/zxing/zxing/tree/master/android。可以使用 svn checkouth..."}
+{"title": "Android 5.0 app样式", "desc": "摘要: 可以在res/values/styles.xml中，设置配色方案。"}
+{"title": "OpenCV fitline直线拟合函数学习", "desc": "摘要: 下图是OpenCV官方文档中，对直线拟合函数的详细介绍：fitLine()函数用于，对二维或三维空间中的点集进行直线拟合。共有六个参数：param 1:输入的点集，可以是Mat或者vector，可以是二维点集或三维点集。例如：vector points;param 2:拟合结果，即一条直线。在二维空..."}
+{"title": "Linux文件系统", "desc": "摘要: 参考一些资料，学习一下linux文件系统的一些基本知识。主要包括：linux磁盘分区和目录、挂载的基本原理、文件存储结构、软连接硬链接等。1、linux磁盘分区和目录linux各个发行版之间差别不大，目录结构基本一致。Windows文件系统结构是多个树状结构并列，树顶部就是不同的磁盘分区。而linu..."}
+{"title": "Ubuntu 12.04 笔记本触摸板失灵解决方法", "desc": "摘要: Ubuntu 12.04 系统在登陆界面，触摸板可以正常使用。登陆之后，触摸板失灵。解决方法如下：Ctrl+ALt+T，在终端中输入以下代码：sudo modprobe -r psmousesudo modprobe psmouse proto=imps此时，触摸板恢复使用。在如下目录，新建opti..."}
+{"title": "利用微软测试工具PICT生成测试用例", "desc": "摘要: ---恢复内容开始---这里使用一个登陆界面的测试作为例子，程序流程中共有5项待测环节。1.首先，列出每个条目所需进行测试的分支：1 账户名:空,不存在,超长,超短,正常2 密码:空,超长,超短,不匹配,正常3 验证码:空,超长,超短,不匹配,正常4 会话:保存一个月,保存三个月,保存一年,不保存5..."}
+{"title": "Myeclipse 使用JUnit 进行单元测试", "desc": "摘要: Java计算器源码（只实现了加减乘除四种简单的运算）： 1 import java.math.BigDecimal; 2 import java.text.Format; 3 public class Caculator { 4 private BigDecimal num1; 5 private ..."}
+{"title": "Myeclipse 2014 安装checkstyle、PMD和Metrics", "desc": "摘要: Myeclipse 2014 安装checkstyle、PMD和Findbugs在项目中，单击右键即可进行相关配置："}
