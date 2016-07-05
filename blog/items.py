@@ -12,4 +12,4 @@ class BlogItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
 	title = Field()
-	desc = Field()
+	link = Field()

@@ -14,19 +14,17 @@ class Spider_Myblog(scrapy.Spider):
 	start_urls = ["http://www.cnblogs.com/TongWee"]
 	def parse(self, response):
 		titles = []
-		descs = []
+		links = []
 		for sel in response.xpath('//*[@class="postTitle2"]'):
 			title = sel.xpath('text()').extract()
 			for ti in title:
 				titles.append(ti)
 				self.logger.info("<TITLE> : \t" + ti)
-		for sel in response.xpath('//*[@class="c_b_p_desc"]'):
-			desc = sel.xpath('text()').extract()
-			for de in desc:
-				descs.append(de)
+			link = sel.xpath('@href').extract()
+			links.append(link)
 		for i in range(0, len(titles) - 1):
 			item = BlogItem()
 			item['title'] = titles[i]
-			item['desc'] = descs[i]
+			item['link'] = links[i]
 			yield item
 
